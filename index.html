@@ -15,7 +15,7 @@
 			<!-- Header -->
 				<header id="header">
 					<div class="logo">
-						<span class="icon fa-moon"></span>
+						<span class="icon solid fa-laptop-code"></span>
 					</div>
 					<div class="content">
 						<div class="inner">
@@ -148,11 +148,42 @@
 						</article>
 
 					<!-- Projects -->
-						<article id="about">
-							<h2 class="major">Projects</h2>
-							<span class="image main"><img src="images/pic03.jpg" alt="Project Showcase" /></span>
-							<p>Project descriptions coming soon!</p>
-						</article>
+					<article id="about">
+						<h2 class="major">Projects</h2>
+					
+						<div class="slideshow-container">
+					
+							<!-- Slide 1 -->
+							<div class="mySlide fade">
+								<h3>Stock Market Visualizer</h3>
+								<p>Built a real-time dashboard in Python using Dash and Yahoo Finance API to track NASDAQ & NYSE stocks.</p>
+							</div>
+					
+							<!-- Slide 2 -->
+							<div class="mySlide fade">
+								<h3>Salary Prediction Model</h3>
+								<p>Used scikit-learn to predict salaries from job data. Achieved 82% accuracy. Deployed with Streamlit.</p>
+							</div>
+					
+							<!-- Slide 3 -->
+							<div class="mySlide fade">
+								<h3>Android Grocery App</h3>
+								<p>Created an Android app with Firebase backend for tracking groceries and sending expiration alerts.</p>
+							</div>
+					
+							<!-- Navigation arrows -->
+							<a class="prev" onclick="plusSlides(-1)">❮</a>
+							<a class="next" onclick="plusSlides(1)">❯</a>
+					
+						</div>
+					
+						<!-- Dots below (optional) -->
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+						</div>
+					</article>
 
 					<!-- Contact -->
 						<article id="contact">

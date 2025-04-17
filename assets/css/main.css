@@ -1158,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/bg3.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1715,4 +1715,76 @@ input, select, textarea {
 .relevant-courses.two-column li {
     break-inside: avoid;
     margin-bottom: 0.5rem;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+	position: relative;
+	max-width: 100%;
+	margin: auto;
+}
+
+.mySlide {
+	display: none;
+	text-align: center;
+	padding: 1.5rem;
+	background: rgba(255,255,255,0.05);
+	border-radius: 10px;
+}
+
+.fade {
+	animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+	from { opacity: 0.4 }
+	to { opacity: 1 }
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 0.5rem;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 2rem;
+	transition: 0.3s;
+	user-select: none;
+}
+
+.prev:hover, .next:hover {
+	color: #f1f1f1;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+/* Dots */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 4px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+	background-color: #fff;
+}
+/* Remove dotted outline on slideshow arrows */
+.slideshow-container a {
+	outline: none;
+	border: none;
+	text-decoration: none;
 }
